@@ -40,8 +40,9 @@ public class InterviewDemoStepDefinition {
 
 	@Given("I navigate to automation exercice app")
 	public void iNavigateToAutomationExerciceApp() {
+		
 		Setup.getDriver().get("https://automationexercise.com/");
-		// Setup.getDriver().get(ConfigFileReader.getProperties("home.url"));
+		
 	}
 
 	@When("I click on Contact Us")
@@ -79,6 +80,7 @@ public class InterviewDemoStepDefinition {
 
 	@Then("I click on Submit")
 	public void iClickOnSubmit() throws InterruptedException {
+		
 		seleniumUtils.click(InterviewDemoPage.getSubmitBtn());
     Thread.sleep(3000);
 	}
